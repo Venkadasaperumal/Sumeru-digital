@@ -27,12 +27,12 @@
 <body>
   <div id="card">
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
-    <model-viewer src="Model/vishalakshmi mantap.glb"                
+    <model-viewer src="Model/vishalakshmi mantap.glb"               
                   alt=""
                   shadow-intensity="0"
-				  id="viewer-singleton"
+				 
                   camera-controls
-				  camera-orbit="-20deg 70deg 20m"
+				  camera-orbit="20deg 70deg 120m"
 				  safari chrome
                    ar
 				   ar-scale=""
@@ -53,18 +53,6 @@
   <script nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
   </script>
-  
-  <script>
-        (() => {
-          var checkExist = setInterval(function() {
-           if (document.querySelector("#viewer-singleton") != null) {
-              modelViewer = document.querySelector("#viewer-singleton");
-              modelViewer.activateAR();
-              clearInterval(checkExist);
-           }
-        }, 100);
-        })();
-    </script>
   
   
 
